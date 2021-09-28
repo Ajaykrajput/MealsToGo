@@ -4,7 +4,7 @@
     "slug": "MealsToGo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/Food-spicy.jpg",
+    "icon": "./assets/meals-icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
