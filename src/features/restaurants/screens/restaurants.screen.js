@@ -32,7 +32,7 @@
 import React, { useContext, useState } from "react";
 import { TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
-import { ActivityIndicator, Colors } from "react-native-paper";
+// import { ActivityIndicator, Colors } from "react-native-paper";
 import { FadeInView } from "../../../componants/animations/fade.animation";
 
 import { SafeArea } from "../../../componants/utility/safe-area.component";
@@ -44,14 +44,17 @@ import { FavouritesBar } from "../../../componants/favourites/favourites-bar.com
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 import { FavouritesContext } from "../../../services/favourites/favourites.context";
 import { RestaurantList } from "../components/restaurant-list.styles";
+import LottieView from "lottie-react-native";
 
-const Loading = styled(ActivityIndicator)`
-  margin-left: -25px;
-`;
+// const Loading = styled(ActivityIndicator)`
+//   margin-left: -25px;
+// `;
 const LoadingContainer = styled.View`
+  width: 100%;
+  height: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 40px;
+  padding: ${(props) => props.theme.space[2]};
 `;
 
 export const RestaurantsScreen = ({ navigation }) => {
@@ -63,8 +66,15 @@ export const RestaurantsScreen = ({ navigation }) => {
   return (
     <>
       {isLoading && (
-        <LoadingContainer>
-          <Loading size={50} animating={true} color={Colors.blue300} />
+        <LoadingContainer size={100}>
+          {/* <Loading size={50} animating={true} color={Colors.blue300} /> */}
+          <LottieView
+            key="animation"
+            autoPlay
+            loop
+            // resizeMode="cover"
+            source={require("../../../../assets/meals-animation.json")}
+          />
         </LoadingContainer>
       )}
       <Search
@@ -104,4 +114,4 @@ export const RestaurantsScreen = ({ navigation }) => {
   );
 };
 
-export default RestaurantsScreen;
+// export default RestaurantsScreen;

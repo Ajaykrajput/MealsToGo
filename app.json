@@ -4,7 +4,7 @@
     "slug": "MealsToGo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/meals-icon.png",
+    "icon": "./assets/food-icon-designready.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
+        "foregroundImage": "./assets/food-icon-designready.png",
         "backgroundColor": "#FFFFFF"
       }
     }
