@@ -6,7 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/food-icon-designready.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/food-animation.gif",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
